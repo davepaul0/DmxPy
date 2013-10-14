@@ -11,7 +11,11 @@ To initialize:<br />
 <code>dmx = DmxPy('serial port')</code>
 Where 'serial port' is where your device is located.
 
-(If you're using a Mac or Linux OS, type:<code>cd /dev<br />ls</code><br />
-to get a list of all devices.)
+To set a channel's value:<br />
+<code>dmx.setChannel(chan, value)</code>
+Where 'chan' and 'value' are integers representing the respective DMX channels and values to set!
 
+To push dmx changes to device:<br />
+<code>dmx.render()</code>
+You need to call this to update the device!
 
