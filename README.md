@@ -1,5 +1,7 @@
 ## DmxPy - Python Controller for USB - DMX devices
 
+This is a Python 3 port of DmxPy.
+
 DmxPy is a super-lightweight Python library for controlling any USB-DMX device that is compatible with Enttec's DMXUSB Pro.  This includes all Dmxking ultraDMX devices.
 
 DmxPy requires PySerial to work - http://pyserial.sourceforge.net/
