@@ -30,10 +30,10 @@ class DmxPy:
 		
 		
 	def blackout(self):
-		for i in xrange(1, 512, 1):
+		for i in range(1, 512, 1):
 			self.dmxData[i] = bytes([0])
 		
 		
 	def render(self):
-		sdata = ''.join(self.dmxData)
+		sdata = b''.join(self.dmxData)
 		self.serial.write(DMXOPEN + DMXINTENSITY + sdata + DMXCLOSE)
